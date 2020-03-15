@@ -1,0 +1,38 @@
+html {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav {
+    flex-grow: 0;
+    align-content: flex-start;
+    
+    border: 10px solid red;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    border: 10px solid black;
+
+}
+
+article {
+    border: 10px solid gray;
+    background: #abcdef;
+    width: 60%;
+}
+
+aside {
+    border: 10px solid #ffffcc;
+    background: #abcdef;
+    width: 40%;
+}
+
+footer {
+    flex-grow: 0;
+    align-content: flex-start;
+    
+    border: 10px solid red;
+    height: 100px;
+}
