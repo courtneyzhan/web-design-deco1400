@@ -9,3 +9,14 @@ footer.footer-content {
 #contact {
   background-color: #eceff1;
 }
+
+a.active {
+  background-color: #000000;
+}
+
+#nav-bar {
+    position:fixed;
+}
+#content {
+    padding-top: 7.2%;
+}
