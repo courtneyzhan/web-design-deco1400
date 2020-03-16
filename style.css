@@ -14,19 +14,20 @@ nav {
 main {
     display: flex;
     border: 10px solid black;
-
 }
 
 article {
     border: 10px solid gray;
     background: #abcdef;
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
 }
 
 aside {
     border: 10px solid #ffffcc;
-    background: #abcdef;
-    width: 40%;
+/*    background: #abcdef;*/
+    width: 30%;
 }
 
 footer {
@@ -35,4 +36,12 @@ footer {
     
     border: 10px solid red;
     height: 100px;
+}
+
+.side-link {
+  display: flex;
+  
+  background: white;
+  height: 50px;
+  border: 2px dotted #abcdef;
 }
