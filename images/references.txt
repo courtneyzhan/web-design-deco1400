@@ -1,0 +1,5 @@
+underwater.jpg:
+    https://www.pexels.com/photo/underwater-2170473/
+    
+kirby.jpg:
+    https://www.pngitem.com/middle/bwJTmb_omniversal-battlefield-kirby-kirby-star-allies-hd-png/
