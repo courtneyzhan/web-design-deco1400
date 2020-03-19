@@ -1,5 +1,11 @@
-underwater.jpg:
+underwater-1.jpg:
     https://www.pexels.com/photo/underwater-2170473/
+    
+underwater-2.jpg
+    https://pixabay.com/photos/ocean-sea-submerged-underwater-1845110/
     
 kirby.jpg:
     https://www.pngitem.com/middle/bwJTmb_omniversal-battlefield-kirby-kirby-star-allies-hd-png/
+    
+Fonts:
+    https://fonts.google.com/specimen/Playfair+Display?selection.family=Montserrat|Playfair+Display

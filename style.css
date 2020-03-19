@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
 
 body {
-    margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 /*nav {
@@ -13,19 +13,20 @@ body {
 }*/
 
 main {
-    display: flex;
+  display: flex;
 }
 
 aside {
-    width: 30%;
-    border-right: solid 0.75px #696969;
-/*    display: flex; /*will make it spaced around evenly!! */*/
+  width: 30%;
+  border-right: solid 0.35px #FFFFFF;
 }
 
 .sidebar {
   display: flex;
-  justify-content: space-around;
+/*  justify-content: space-around;*/
   flex-direction: column;
+  background: #449994;
+  height: 100%;
 }
 
 .logo {
@@ -39,42 +40,50 @@ aside {
 .side-link {
   padding: 1em;
   padding-left: 2em;
-  text-transform: uppercase;
+
 /*  border: 0.1px dotted #abcdef;*/
 }
 
+.sidebar a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300px;
+}
 
 article {
 /*    background: #abcdef;*/
-    width: 70%;
+  width: 70%;
 }
 
-article .introduction h1 {
-    font-family: 'Playfair Display', serif;
-    color: white;
-    font-size: 4em;
-    padding-left: 4em;
-    padding-top: 4em;
-    
-    margin: 0em 0em;
+article .heading h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 4em;
+  padding-right: 1em;
+  padding-top: 4em;
+  text-align: right;
+  margin: 0em 0em;
 }
 
-.introduction {
-    width: 100%;
-    height: auto;
+.heading {
+  width: 100%;
+  height: auto;
 /*    background: #ffffcc;*/
-    background-image: url('images/underwater.jpg');
+  background-image: url('images/underwater-2.jpg');
+  background-size: cover;
 }
 
 .content {
-    padding-top: 0em;
-    padding: 0em 4em 4em 4em;
+  padding-top: 0em;
+  padding: 0em 4em 1em 4em;
 }
 
 footer {
-    flex-grow: 0;
-    align-content: flex-start;
-    
-    border: 2px solid red;
-    height: 100px;
+  flex-grow: 0;
+  align-content: flex-start;
+  background: #367A76;
+  height: 100px;
 }
