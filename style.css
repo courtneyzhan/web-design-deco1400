@@ -17,15 +17,18 @@ main {
 }
 
 aside {
-  width: 30%;
-  border-right: solid 0.35px #FFFFFF;
+  width: 20em;
+/*  border-right: solid 0.35px #FFFFFF;*/
+  position: fixed;
+  top: 0%;
+  height: 100%;
 }
 
 .sidebar {
   display: flex;
 /*  justify-content: space-around;*/
   flex-direction: column;
-  background: #449994;
+  background: #83B0D6;
   height: 100%;
 }
 
@@ -40,8 +43,6 @@ aside {
 .side-link {
   padding: 1em;
   padding-left: 2em;
-
-/*  border: 0.1px dotted #abcdef;*/
 }
 
 .sidebar a {
@@ -54,8 +55,9 @@ aside {
 }
 
 article {
-/*    background: #abcdef;*/
-  width: 70%;
+  margin-left: 20em;
+  width: 100%;
+  
 }
 
 article .heading h1 {
@@ -69,7 +71,8 @@ article .heading h1 {
 }
 
 .heading {
-  width: 100%;
+  margin-left: 0em;
+  width: full;
   height: auto;
 /*    background: #ffffcc;*/
   background-image: url('images/underwater-2.jpg');
@@ -82,8 +85,25 @@ article .heading h1 {
 }
 
 footer {
-  flex-grow: 0;
+/*  position: absolute;*/
+  margin-left: 20em;
+  padding: 1em 1em 2em 1em;
   align-content: flex-start;
-  background: #367A76;
-  height: 100px;
+  background: #D9D9D9;
+  height: 30%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+/*  border: solid 1px red;*/
+  height: 100%;
+}
+
+.contact {
+  padding: 1em;
+}
+
+.index {
+  padding: 1em;
 }
