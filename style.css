@@ -84,6 +84,14 @@ article .heading h1 {
   padding: 0em 4em 1em 4em;
 }
 
+.filler-text {
+}
+
+.home-page-picture {
+  width: 40%;
+  box-shadow: 3px 3px 10px #696969;
+}
+
 footer {
 /*  position: absolute;*/
   margin-left: 20em;
@@ -91,6 +99,11 @@ footer {
   align-content: flex-start;
   background: #D9D9D9;
   height: 30%;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  
 }
 
 .footer-content {
