@@ -17,7 +17,7 @@ aside .sidebar {
   display: flex;
 /*  justify-content: space-around;*/
   flex-direction: column;
-  background: #83B0D6;
+  background: #98c1d9; /*old colour: 83B0D6*/
   height: 100%;
 }
 
@@ -31,7 +31,7 @@ aside .sidebar {
 
 .side-link {
   padding: 1em;
-  padding-left: 1.2em;
+  padding-left: 1.4em;
 }
 
 .sidebar a {
@@ -47,7 +47,19 @@ aside .sidebar {
 main {
 /*  display: flex;*/
   margin-left: 18em;
-  
+  margin-right: 10em;
+}
+
+
+/* LOCAL NAVIGATION SIDEBAR */
+.local-navigation {
+	position: fixed;
+	left: calc(100% - 10em);
+}
+
+.local-navigation li {
+	list-style-type: "|";
+	padding: 0.4em;
 }
 
 /**/
@@ -60,14 +72,12 @@ section {
 section aside {
   width: 50em;
   float: right;
-  background: #FFFFCC;
+/*  background: #FFFFCC;*/
   font-size: 15pt;
-  padding: 2em;
+  padding-top: 1.2em;
 }
 
 article {
-/*  width: 75%;*/
-  background: pink;
 }
 
 
@@ -118,7 +128,10 @@ h4 {
   
 }
 
-.footer-content {
+footer {
+	display: none;
+}
+.footer-content { /*TODO decide not to include footer*/
   display: flex;
   justify-content: space-around;
 /*  border: solid 1px red;*/
@@ -135,15 +148,26 @@ h4 {
 
 /* MOBILE (< 1000px width) */
 @media only screen and (max-width: 1000px) {
-  body {
+/*  body {
     background: #FFFFCC;
-  }
+  }*/
   
-  .sidebar {
+  .local-navigation {
     display: none;
   }
   
   main {
-    margin-left: 0em;
+	  margin-right: 0em; /* Remove local navigation */
   }
+}
+
+@media only screen and (max-width: 700px) {
+    .local-navigation, .sidebar {
+      display: none;
+    }
+  
+    main {
+      margin-left: 0em; /* Remove side bar*/
+	  margin-right: 0em; /* Remove local navigation */
+    }
 }
