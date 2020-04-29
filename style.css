@@ -184,7 +184,7 @@ footer {
   
 }
 
-.footer-content { /*TODO decide not to include footer*/
+.footer-content {
   display: flex;
   justify-content: space-around;
   height: 100%;
