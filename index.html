@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -14,122 +15,142 @@
         <div class="sidebar">
             <a href="#">
                 <div class="side-link">
-                    <div>
-                        <img class="logo" src="images/kirby.png" alt="logo">
-                    </div>
-                    Home
+                    <img class="logo" src="images/kirby.png" alt="logo">
                 </div>
             </a>
             <a href="#2">
-                <div class="side-link">Rooms and Pricing</div>
+                <div class="side-link">Rooms & Room Bookings</div>
+            </a>
+            <a href="#3">
+                <div class="side-link">Experiences</div>
             </a>
             <a href="#3">
                 <div class="side-link">Location</div>
             </a>
+            <a href="#3">
+                <div class="side-link">FAQs</div>
+            </a>
             <a href="gallery.html">
-                <div class="side-link">Gallery</div>
+                <div class="side-link">Contact Us</div>
             </a>
         </div>
     </aside>
-        <header>
-          <div class="heading">
-              <h1>It's a Resort!</h1>
+    <header>
+        <div class="heading">
+            <h1>It's a Resort!</h1>
+        </div>
+    </header>
+    <main>
+      <div class="content">
+        <aside class="local-navigation">
+            <div>
+                <ul>
+                    <li><a href="#summary-of-resort" class="active">Summary of Resort</a></li>
+                    <li><a href="#upcoming-events-snapshot">Upcoming Events</a></li>
+                    <li><a href="#photo-gallery">Photo Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <section id="summary-of-resort">
+          <h2>What do we have to offer?</h2>
+          <p>We're glad you asked! Situated in the heart of Atlantis, <i>The Name of the Resort</i>, offers an experience like no other.</p>
+          <div class="error-zone" style="border: dotted 2px red;">
+          <h3>Current Known Problems:</h3>
+          <ul>
+            <li>1 Local navigation messed up when screen is short - on top of the footer</li>
+            <li>3 Aesthetic: make sure 'It's a Resort' is stuck to the bottom of the image.. </li>
+          </ul>
+        </div>
+          TODO write the introduction (2 paragraph)
+                              <h3 id="css-that-can-be-applied-to-the-container"><strong>CSS that can be applied to the container</strong></h3>
+
+                              <!--kg-card-begin: code-->
+                              <div>
+                                  <code class="language-css">
+          display: flexbox | inline-flex;
+          flex-direction: row | row-reverse | column | column-reverse;
+          flex-wrap: nowrap | wrap | wrap-reverse;
+          flex-flow: &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;
+          justify-content: flex-start | flex-end | center | space-between | space-around;
+          align-items: flex-start | flex-end | center | baseline | stretch;
+          align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+                    </code>
+                              </div>
+                              <!--kg-card-end: code-->
+                              <h3 id="css-that-can-be-applied-to-items-elements-in-the-container"><strong>CSS that can be applied to items/elements in the container</strong></h3>
+                              <!--kg-card-begin: code-->
+                              <div>
+                                  <code class="language-css">
+          order: &lt;integer&gt;;
+          flex-grow: &lt;number&gt;; /* default 0 */
+          flex-shrink: &lt;number&gt;; /* default 1 */
+          flex-basis: &lt;length&gt; | auto; /* default auto */
+          flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+          align-self: auto | flex-start | flex-end | center | baseline | stretch;
+                    </code>
+                              </div>
+        </section>
+        <br><hr>
+        
+        <section id="upcoming-events-snapshot">
+          <h2>Upcoming Events</h2>
+          
+          <div class="event">
+            <div class="date">
+              <span class="day">7</span>
+              <span class="month">Apr</span>
+            </div>
+            <div class="event-details">
+            <span class="event-name">Live Music</span>
+            <span class="description">
+              <span class="price">Free</span>
+              <span class="time">7pm</span>
+              <span class="other">Roxette</span>
+            </span>
           </div>
-        </header>
-	    <main>
-		
-        <section id="main-content">
+          </div>
+        </section>
+        <br><hr>
+        
+        <section id="photo-gallery">
+          <h2>Photo Gallery</h2>
+          TODO carousel?? pop up modal?
+        </section>
+        <br><hr>
+        
+        <section id="testimonials">
+          <h2>Testimonials</h2>
+          TODO automatic slideshow of testimonials
+        </section>
+
+        <section>
             <article>
-                
-                <div class="content">
-                    <h3 id="css-that-can-be-applied-to-the-container"><strong>CSS that can be applied to the container</strong></h3>
 
-                    <!--kg-card-begin: code-->
-                    <div>
-                        <code class="language-css">
-display: flexbox | inline-flex;
-flex-direction: row | row-reverse | column | column-reverse;
-flex-wrap: nowrap | wrap | wrap-reverse;
-flex-flow: &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;
-justify-content: flex-start | flex-end | center | space-between | space-around;
-align-items: flex-start | flex-end | center | baseline | stretch;
-align-content: flex-start | flex-end | center | space-between | space-around | stretch;
-          </code>
-                    </div>
-                    <!--kg-card-end: code-->
-                    <h3 id="css-that-can-be-applied-to-items-elements-in-the-container"><strong>CSS that can be applied to items/elements in the container</strong></h3>
-                    <!--kg-card-begin: code-->
-                    <div>
-                        <code class="language-css">
-order: &lt;integer&gt;;
-flex-grow: &lt;number&gt;; /* default 0 */
-flex-shrink: &lt;number&gt;; /* default 1 */
-flex-basis: &lt;length&gt; | auto; /* default auto */
-flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
-align-self: auto | flex-start | flex-end | center | baseline | stretch;
-          </code>
-                    </div>
-
-                    <br/>
-                    <hr/>
-
-                    <div class="filler-text">
+                <div class="filler-text">
                         <p>Cupcake ipsum dolor. Sit amet apple pie macaroon. Bonbon chocolate cake cupcake gingerbread marzipan soufflé chupa chups cake.</p>
                         <img class="home-page-picture" src="images/underwater-1.jpg" alt="underwater">
 
                         <h2>Dummy text? More like dummy thicc text, amirite?</h2>
 
-                        <p>Pour-over sustainable jianbing mumblecore kinfolk lomo pop-up kogi. Venmo sartorial flannel freegan raw denim. Lyft unicorn art party cronut viral edison bulb. Jean shorts ennui food truck gochujang echo park polaroid tumeric banh
-                            mi salvia pitchfork migas locavore.</p>
+                        <p>Pour-over sustainable jianbing mumblecore kinfolk lomo pop-up kogi. Venmo sartorial flannel freegan raw denim. Lyft unicorn art party cronut viral edison bulb. Jean shorts ennui food truck gochujang echo park polaroid tumeric banh mi salvia pitchfork migas locavore.</p>
 
-                        <p>I'm baby slow-carb affogato poke viral enamel pin shoreditch pop-up put a bird on it vaporware taxidermy ramps. Semiotics authentic squid iPhone yr fanny pack cliche everyday carry pug slow-carb 90's knausgaard sustainable. Tacos
-                            listicle hexagon vegan quinoa cardigan affogato kale chips VHS pinterest chicharrones authentic af lumbersexual. Selfies YOLO copper mug af VHS, hammock kitsch shaman tacos cold-pressed street art. Meh crucifix food truck,
-                            austin affogato single-origin coffee la croix. Blog banjo gastropub XOXO kale chips kickstarter aesthetic four dollar toast cliche health goth chicharrones pitchfork gentrify salvia vaporware.</p>
+                        <p>I'm baby slow-carb affogato poke viral enamel pin shoreditch pop-up put a bird on it vaporware taxidermy ramps. Semiotics authentic squid iPhone yr fanny pack cliche everyday carry pug slow-carb 90's knausgaard sustainable. Tacos listicle hexagon vegan quinoa cardigan affogato kale chips VHS pinterest chicharrones authentic af lumbersexual. Selfies YOLO copper mug af VHS, hammock kitsch shaman tacos cold-pressed street art. Meh crucifix food truck, austin affogato single-origin coffee la croix. Blog banjo gastropub XOXO kale chips kickstarter aesthetic four dollar toast cliche health goth chicharrones pitchfork gentrify salvia vaporware.</p>
 
-                        <p>Biscuit sesame snaps marzipan soufflé fruitcake carrot cake danish. Dragée cake pudding cheesecake donut. Sugar plum topping dragée danish ice cream biscuit candy canes gingerbread. Topping gingerbread ice cream lemon drops dragée
-                            cotton candy caramels gummies powder.</p>
-                    </div>
+                        <p>Biscuit sesame snaps marzipan soufflé fruitcake carrot cake danish. Dragée cake pudding cheesecake donut. Sugar plum topping dragée danish ice cream biscuit candy canes gingerbread. Topping gingerbread ice cream lemon drops dragée cotton candy caramels gummies powder.</p>
                 </div>
             </article>
-            <aside class="local-navigation">
-              <div>
-				  <ul>
-				  	<li><a href="#" class="active">Local</a></li>
-				  	<li><a href="#">Navigation</a></li>
-				  	<li><a href="#">Goes</a></li>
-				  	<li><a href="#">Here!</a></li>
-				  </ul>
-              </div>
-            </aside>
+
         </section>
 
-        <footer>
-            Logo
-            <div class="footer-content">
-                <div class="contact">
-                    <h4>Contact us!</h4>
-                    Occupy kinfolk direct trade succulents, green juice chillwave try-hard intelligentsia vegan pok pok. Ugh fam cliche squid, iceland vegan next level biodiesel affogato. Farm-to-table mustache poke brooklyn williamsburg ugh kombucha tofu hoodie bushwick.
-                    Woke williamsburg air plant disrupt, hexagon tbh yuccie man bun viral palo santo green juice mustache edison bulb venmo messenger bag.
+</div> <!-- End content tag, remove padding for main's content-->
 
-                </div>
-                <hr/>
-                <div class="index">
-                    <!-- <h4>Index</h4> -->
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-
-
-                </div>
-
-
-            </div>
-            <hr/> &copy; Copyright!
-        </footer>
     </main>
-
+        <footer>
+            <div class="footer-content">
+                <hr/> &copy; Copyright!
+            </div>
+        </footer>
 </body>
-
 </html>
