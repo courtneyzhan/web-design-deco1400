@@ -206,6 +206,10 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+	.heading {
+		margin-left: 0em;
+		width: 100%;
+	}
     .local-navigation, .sidebar {
       display: none;
     }
