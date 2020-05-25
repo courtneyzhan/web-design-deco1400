@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;531&family=Noto+Serif&display=swap');
 
 body {
   margin: 0px 0px 0px 0px;
+/*  font-family: 'Inter', sans-serif;*/
+  font-family: 'Noto Serif', serif;
 }
 
 /* SIDE BAR CONTENT*/
 aside .sidebar {
-  width: 18em;
+  width: 20em;
 /*  border-right: solid 0.35px #FFFFFF;*/
   position: fixed;
   overflow: scroll;
@@ -20,21 +22,29 @@ aside .sidebar {
   display: flex;
 /*  justify-content: space-around;*/
   flex-direction: column;
-  background: #98c1d9; /*old colour: 83B0D6*/
+  background: #3E5666; /*old colour: #98c1d9*/
   height: 100%;
 }
 
+#logo {
+  display: flex;
+}
+
 .logo {
-  max-width: 100%;
-  height:auto;
-  padding-bottom: 1em;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-size: 6em;
 }
+
+
 
 .side-link {
   padding: 1em;
-  padding-left: 1.4em;
+}
+
+.side-link-text {
+  padding-left: 4em;
 }
 
 .sidebar a {
@@ -42,22 +52,21 @@ aside .sidebar {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300px;
+  font-family: 'Inter', sans-serif;
 }
 
 /* MAIN BODY => ARTICLE + FOOTER*/
 main {
 /*  display: flex;*/
-  margin-left: 18em;
-  margin-right: 10em;
+  margin-left: 20em;
+  margin-right: 15em;
 }
 
 
 /* LOCAL NAVIGATION SIDEBAR */
 .local-navigation {
 	position: fixed;
-	left: calc(100% - 10em);
+	left: calc(100% - 15em);
   font-size: 1.2em;
   padding-top: 1.2em;
   overflow: scroll;
@@ -71,6 +80,11 @@ main {
 	padding: 0.4em;
 }
 
+.local-navigation .active {
+  color: red;
+/*  font-weight: 300px;*/
+}
+
 /* MAIN CONTENT (INSIDER PAGE) */
 section {
   width: 100%;
@@ -80,33 +94,27 @@ section {
 /* IMAGE HEADER + HEADER TEXT*/
 header .heading h1 {
   position: relative;
-  font-family: 'Playfair Display', serif;
-  color: white;
+  font-family: 'Bree Serif', serif;
+  color: #4BA9E9;
   font-size: 4em;
-  padding-right: 8%;
-  padding-top: 10vh;
-  text-align: right;
+  padding-top: 2%;
   margin: 0em 0em;
-  bottom: 20px;
 }
 
 .heading {
-  margin-left: 18em;
-  width: calc(100% - 18em);
-  height: 20vh;
-  min-height: 100px;
-  background-image: url('images/underwater-2.jpg');
-  background-size: cover;
+  margin-left: 24em;
+  width: calc(100% - 24em);
+/*  height: 20vh;*/
+/*  min-height: 100px;*/
 }
 
 /*PAGE CONTENTS*/
 .content {
-  padding-top: 0em;
   padding: 0em 4em 1em 4em;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bree Serif', serif;
   font-size: 2em;
 }
 
