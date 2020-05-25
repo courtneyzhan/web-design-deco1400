@@ -1,5 +1,7 @@
 #ToDo
 
-* When screen is short, the local navigation is on top of the footer
-* Make It's a Resort stuck on the bottom of the image-header
-* Responsively sized asides (atm fixed size - 18em and 10em)
+* When screen is short, the local navigation is on top of the footer - fixable with JS
+  https://stackoverflow.com/questions/8653025/stop-fixed-position-at-footer
+* Responsively sized asides (atm fixed size - 20em and 15em)
+* Get Scrollspy working
+* Remove active class on logo (? unless,,)
