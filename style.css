@@ -39,10 +39,15 @@ aside .sidebar {
 
 .side-link {
   padding: 1em;
+  padding-top: 1em;
+  padding-left: 3em;
+  display: flex;
+  align-items: center;
 }
 
 .side-link-text {
-  padding-left: 4em;
+  padding-left: 1em;
+  
 }
 
 .sidebar a {
