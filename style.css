@@ -98,6 +98,14 @@ main {
   font-weight: bolder;
 }
 
+#upcoming-events-snapshot {
+  height: 700px;
+}
+
+#testimonials {
+  height: 700px;
+}
+
 /* MAIN CONTENT (INSIDER PAGE) */
 section {
   width: 100%;
@@ -195,6 +203,13 @@ h2 {
   width: 40%;
   box-shadow: 3px 3px 10px #696969;
 }
+#contact-details-table {
+  padding-left: 4em;
+}
+
+#contact-details-table td {
+  padding-left: 1em;
+}
 
 footer {
   padding: 1em 1em 1em 1em;
@@ -228,7 +243,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
 	.heading {
-		margin-left: 0em;
+		margin-left: 4em;
 		width: 100%;
 	}
     .local-navigation, .sidebar {

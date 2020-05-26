@@ -10,7 +10,7 @@
     <title>My Resort</title>
 </head>
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/smartScroll.js"></script>
+<script src="js/scrollspy.js"></script>
 <script src="js/script.js"></script>
 <body>
     <aside>
@@ -78,17 +78,15 @@
     </header>
     <main>
       <div class="content">
-        <aside class="local-navigation">
-            <div>
+        <nav id="local-navigation" class="local-navigation">
                 <ul>
-                    <li class="active"><a href="#summary-of-resort">Summary of Resort</a></li>
-                    <li><a href="#upcoming-events-snapshot">Upcoming Events</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li class="active local-nav-item" id="summary-of-resort-link"><a href="#" data-scroll="#summary-of-resort">Summary of Resort</a></li>
+                    <li class="local-nav-item" id="upcoming-events-snapshot-link"><a href="#" data-scroll="#upcoming-events-snapshot">Upcoming Events</a></li>
+                    <li class="local-nav-item" id="testimonials-link"><a href="#" data-scroll="#testimonials">Testimonials</a></li>
                 </ul>
-            </div>
-        </aside>
+        </nav>
         
-        <section id="summary-of-resort">
+        <section class="section" id="summary-of-resort">
           <h2>What do we have to offer?</h2>
           <p>We're glad you asked! Situated in the heart of Atlantis, <i>The Name of the Resort</i>, offers an experience like no other.</p>
           <div class="error-zone" style="border: dotted 2px red;">
@@ -135,7 +133,7 @@
         
         <br><hr>
         
-        <section id="upcoming-events-snapshot">
+        <section class="section" id="upcoming-events-snapshot">
           <h2>Upcoming Events</h2>
           
           <div class="event">
@@ -156,7 +154,7 @@
         
         <br><hr>
         
-        <section id="testimonials">
+        <section class="section" id="testimonials">
           <h2>Testimonials</h2>
           TODO automatic slideshow of testimonials
         </section>

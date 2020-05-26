@@ -14,3 +14,8 @@ Font Awesome Icons (home, bed, map, images)
 
 underwater-3.jpg
 https://pixabay.com/photos/underwater-fish-atlantis-sea-water-1216244/
+
+scrollspy:
+  Used this jQuery plug in to detect when objects enter the screen. 
+  On Enter and Exit I toggled the active class. 
+  https://github.com/thesmart/jquery-scrollspy
