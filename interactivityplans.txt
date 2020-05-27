@@ -1,0 +1,16 @@
+Interactive Elements (JS) 
+From Task sheet:
+> Must have at least 4 uniue, meaningful interactiosn implemented with JS. The chosen interactivity **must** support the content. For example:
+  1. Creation or manipulation of content in repsonse to the user (or other events)
+  2. Manipulation of presentation in response to the user (or other events)
+  3. Dynamic navigation inside a page in response to the user (or other events)
+  4. Integration of acceptable JS Plugins
+
+My interactive elements:
+  * Scrollspy Local Navigation
+      4: Integrates thesmart's scrollspy plugin (see references.txt)
+      3: Purpoise is dynamic local navigation in response to user's position on the current page
+  * Dark Mode
+      2: Manipulation of presentation in response to the user (or other events)
+  * XX
+  * XX
