@@ -19,3 +19,6 @@ scrollspy:
   Used this jQuery plug in to detect when objects enter the screen. 
   On Enter and Exit I toggled the active class. 
   https://github.com/thesmart/jquery-scrollspy
+  
+div, contenteditable (replaces text-area in submit inquiry form)
+https://stackoverflow.com/a/54566101
