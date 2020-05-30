@@ -23,3 +23,6 @@ scrollspy:
 Rotating FAQ's Chevron
   https://codepen.io/rezk/pen/PegNRY
   https://css-tricks.com/almanac/properties/t/transform-origin/
+
+div, contenteditable (replaces text-area in submit inquiry form)
+  https://stackoverflow.com/a/54566101
