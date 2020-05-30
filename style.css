@@ -54,7 +54,7 @@ aside .sidebar {
   font-family: 'Inter', sans-serif;
 }
 
-.sidebar .active {
+.sidebar .active:not(:first-child) {
   background: #4BA9E9;
   font-weight: bold;
 }
@@ -191,10 +191,34 @@ h2 {
   display: none;
 }
 
-/*.home-page-picture {
-  width: 40%;
-  box-shadow: 3px 3px 10px #696969;
-}*/
+.faq:not(:first-child) {
+  padding-top: 0em;
+}
+
+.faq-icon {
+  padding-right: 0.5em;
+  color: #4BA9E9;
+} 
+
+.answer {
+  display: none;
+}
+
+.rotate {
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+/*    transform-origin: 45% 45%;*/
+    transform-origin: 30% 60%;
+}
+
 
 #contact-details-table {
   padding-left: 2.5em;

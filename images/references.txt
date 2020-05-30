@@ -19,3 +19,7 @@ scrollspy:
   Used this jQuery plug in to detect when objects enter the screen. 
   On Enter and Exit I toggled the active class. 
   https://github.com/thesmart/jquery-scrollspy
+  
+Rotating FAQ's Chevron
+  https://codepen.io/rezk/pen/PegNRY
+  https://css-tricks.com/almanac/properties/t/transform-origin/
