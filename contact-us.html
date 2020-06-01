@@ -89,19 +89,28 @@
           <h2>Submit an Inquiry</h2>
           <p>Was your question not in answered in the FAQs? For further information, don't hestitate to submit an inquiry and our friendly staff will get in touch with you as soon as possible.</p>
           <span style="color: red;">TODO make inquiry form good</span>
-          <form id="inquiry-form">
-            <table>
-              <tr><td>First Name:<input type="text" id="firstName" name="firstName">
-</td> <td>LastName:<input type="text" id="lastName" name="lastName">
-</td></tr>
-            </table>
-            <table>
-              <tr><td>Email Address:<input type="email" id="email" name="email"></td></tr>
-            </table>
+
+          <form id="inquiry-form-table">
+            <ul class="inquiry-form-inputs">
+              <li>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+              </li>
+              <li>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+              </li>
+              <li>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+              </li>
+            </ul>
+            
             <div class="text-area" data-placeholder="Tell us what's on your mind" contenteditable>
               <!-- Tell us what's on your mind. -->
               <!-- https://htmldom.dev/placeholder-for-a-contenteditable-element/ -->
             </div>
+            <button type="submit">Submit</button>
             
           </form>
           
