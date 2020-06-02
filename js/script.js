@@ -1,16 +1,29 @@
 $(document).ready( function() {
   //
-	$(".hamburger").click(function() {
-		$(".sidebar").show();
-		$(".heading h1").css("z-index", "-1");
-		$(".event .date").css("z-index", "-1");
-		// $(".heading").hide();
-		$(".overlay").show();
-		$(".overlay").click(function() {
-			$(".sidebar").hide();
+	window.onresize = function(event) {
+		var windowWidth = window.innerWidth;
+		console.log(windowWidth);
+		if (windowWidth > 700) {
+			$(".sidebar").show();
 			$(".overlay").hide();
-		});
-	});
+		} else {
+			$(".sidebar").hide();
+			
+			$(".hamburger").click(function() {
+				$(".sidebar").show();
+				$(".heading h1").css("z-index", "-1");
+				$(".event .date").css("z-index", "-1");
+				// $(".heading").hide();
+				$(".overlay").show();
+				$(".overlay").click(function() {
+					$(".sidebar").hide();
+					$(".overlay").hide();
+				});
+			});
+		};
+	};
+
+	
 	
   $('.faq-icon').click(function() {
     console.log("Hello!!")
@@ -18,7 +31,15 @@ $(document).ready( function() {
     // $(this).css("color", "red");
     $(this).toggleClass("down")
     // $(this).toggleClass("fa-rotate-90");
-  })
+  });
+  
+  $('.faq-header').click(function() {
+    console.log("Hello!!")
+    $(this).parent().find('p').toggle(400, "swing", null);
+    // $(this).css("color", "red");
+    $(this).toggleClass("down")
+    // $(this).toggleClass("fa-rotate-90");
+  });
   
   // ScrollSpy for local navigation
 	$('.section').on('scrollSpy:enter', function() {

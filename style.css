@@ -17,6 +17,7 @@ aside .sidebar {
 }
 
 .sidebar {
+	display: block;
   display: flex;
   flex-direction: column;
   background: #3E5666; /*old colour: #98c1d9*/
@@ -321,10 +322,6 @@ footer {
   .slideshow img {
   	width: calc(100vw - 20em);
   	margin-left: -4em;
-  }
-  
-  .sidebar {
-	  display: block;
   }
   
   main {
