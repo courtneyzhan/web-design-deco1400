@@ -1,5 +1,17 @@
 $(document).ready( function() {
   //
+	$(".hamburger").click(function() {
+		$(".sidebar").show();
+		$(".heading h1").css("z-index", "-1");
+		$(".event .date").css("z-index", "-1");
+		// $(".heading").hide();
+		$(".overlay").show();
+		$(".overlay").click(function() {
+			$(".sidebar").hide();
+			$(".overlay").hide();
+		});
+	});
+	
   $('.faq-icon').click(function() {
     console.log("Hello!!")
     $(this).parent().parent().parent().find('p').toggle(400, "swing", null);
