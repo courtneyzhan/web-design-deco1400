@@ -41,6 +41,16 @@ $(document).ready( function() {
     // $(this).toggleClass("fa-rotate-90");
   });
   
+  
+  $("#inquiry-form").submit(function() {
+	  event.preventDefault();
+	  alert("Submitted");
+	  $("#inquiry-form label, #inquiry-form input, #inquiry-form div").hide();
+	  $("span").html("Thanks for your submission, " + $("input[name=firstName]").val() + ". Our team will get back to you as soon as possible.");
+	  $("button").attr("disabled", true);
+	  $("button").html("Successfully submitted")
+  });
+  
   // ScrollSpy for local navigation
 	$('.section').on('scrollSpy:enter', function() {
     // console.log('enter:', $(this).attr('id'));

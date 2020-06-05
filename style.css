@@ -272,6 +272,15 @@ h2 {
   padding-left: 8px;
 }
 
+#inquiry-form-table {
+	background-color: #E8E8E8;
+	padding: 2em 2em;
+}
+
+#inquiry-form-table div {
+	background-color: #FFFFFF;
+}
+
 #inquiry-form-table button {
   margin-top: 2em;
   margin-left: 80%;

@@ -26,3 +26,6 @@ Rotating FAQ's Chevron
 
 div, contenteditable (replaces text-area in submit inquiry form)
   https://stackoverflow.com/a/54566101
+
+On resize screen (control whether show/hide sidebar)
+	https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
