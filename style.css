@@ -58,6 +58,7 @@ aside .sidebar {
 .sidebar .active:not(:first-child) {
   background: #4BA9E9;
   font-weight: bold;
+  z-index: 10;
 }
 
   /* MAIN BODY => ARTICLE + FOOTER*/
@@ -98,8 +99,21 @@ main {
   height: 700px;
 }
 
-#testimonials {
-  height: 700px;
+.testimonial {
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial div {
+  width: 40%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.testimonial div img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 /* MAIN CONTENT (INSIDER PAGE) */

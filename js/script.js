@@ -1,5 +1,26 @@
 $(document).ready( function() {
   //
+	var windowWidth = window.innerWidth;
+  
+	if (windowWidth > 700) {
+		$(".sidebar").show();
+		$(".overlay").hide();
+	} else {
+		$(".sidebar").hide();
+		
+		$(".hamburger").click(function() {
+      console.log("Hello");
+			$(".sidebar").show();
+			$(".heading h1").css("z-index", "-1");
+			$(".event .date").css("z-index", "-1");
+			$(".overlay").show();
+			$(".overlay").click(function() {
+				$(".sidebar").hide();
+				$(".overlay").hide();
+			});
+		});
+	};
+  
 	window.onresize = function(event) {
 		var windowWidth = window.innerWidth;
 		console.log(windowWidth);
@@ -10,10 +31,10 @@ $(document).ready( function() {
 			$(".sidebar").hide();
 			
 			$(".hamburger").click(function() {
+        console.log("Hello");
 				$(".sidebar").show();
 				$(".heading h1").css("z-index", "-1");
 				$(".event .date").css("z-index", "-1");
-				// $(".heading").hide();
 				$(".overlay").show();
 				$(".overlay").click(function() {
 					$(".sidebar").hide();

@@ -29,3 +29,9 @@ div, contenteditable (replaces text-area in submit inquiry form)
 
 On resize screen (control whether show/hide sidebar)
 	https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
+  
+boy.jpg
+  https://pixabay.com/photos/boy-young-people-wagon-train-524512/
+
+girl.jpg
+  https://pixabay.com/photos/beautiful-smile-girl-woman-happy-1274361/
