@@ -1,7 +1,21 @@
 $(document).ready( function() {
-  //
-	var windowWidth = window.innerWidth;
   
+  $("form#activity-form").submit(function() {
+    event.preventDefault();
+    var userName = $("input[name=username]").val();
+    console.log(userName);
+    // $(this).toggle();
+    $("form#details").show();
+    $(this).html("Welcome, " + userName);
+  });
+  
+  $("form#details").submit(function() {
+    event.preventDefault();
+    $(this).toggle();
+  })
+  
+  // Hamburger icon on mobile size
+	var windowWidth = window.innerWidth;
 	if (windowWidth > 700) {
 		$(".sidebar").show();
 		$(".overlay").hide();
@@ -45,7 +59,7 @@ $(document).ready( function() {
 	};
 
 	
-	
+	// faq icon drop down
   $('.faq-icon').click(function() {
     console.log("Hello!!")
     $(this).parent().parent().parent().find('p').toggle(400, "swing", null);
@@ -62,15 +76,15 @@ $(document).ready( function() {
     // $(this).toggleClass("fa-rotate-90");
   });
   
-  
+  // submit inquiry form
   $("#inquiry-form").submit(function() {
 	  event.preventDefault();
-	  alert("Submitted");
 	  $("#inquiry-form label, #inquiry-form input, #inquiry-form div").hide();
-	  $("span").html("Thanks for your submission, " + $("input[name=firstName]").val() + ". Our team will get back to you as soon as possible.");
+	  $("span#submission").html("Thanks for your submission, " + $("input[name=firstName]").val() + ". Our team will get back to you as soon as possible.");
 	  $("button").attr("disabled", true);
 	  $("button").html("Successfully submitted")
   });
+  
   
   // ScrollSpy for local navigation
 	$('.section').on('scrollSpy:enter', function() {
