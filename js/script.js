@@ -83,6 +83,12 @@ $(document).ready( function() {
   });
   
   
+  $("form#booking-form").submit(function() {
+    event.preventDefault();
+    $(this).hide();
+    $("div.notice").show();
+  });
+  
   // Hamburger icon on mobile size
   showHamburger();
 	window.onresize = function(event) {
@@ -144,7 +150,7 @@ function questionAnswers(questionNumber, difficulty) {
       console.log(radios[i].value);
       if ((radios[i].value) == answers[questionNumber - 1]) {
         $("form#questions-easy span.feedback" + questionNumber).html("Correct!");
-        $("form#questions-easy span.feedback" + questionNumber).css("color", "springgreen");
+        $("form#questions-easy span.feedback" + questionNumber).css("color", "green");
         return true;
       } else {
         $("form#questions-easy span.feedback" + questionNumber).html("Incorrect, try again!");
