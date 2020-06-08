@@ -10,7 +10,6 @@
     <title>My Resort</title>
 </head>
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/jquery.cycle2.min.js"></script>
 <script src="js/scrollspy.js"></script>
 <script src="js/script.js"></script>
 <body>
@@ -36,7 +35,7 @@
                   <span class="side-link-text">Activities</span>
                 </div>
             </a>
-            <a href="events.html">
+            <a href="#" class="active">
                 <div class="side-link">
                   <i class="nav-icon fas fa-calendar-day fa-fw"></i> 
                   <span class="side-link-text">Events</span>
@@ -48,7 +47,7 @@
                   <span class="side-link-text">Location</span>
                 </div>
             </a>
-            <a href="#" class="active">
+            <a href="dining.html">
                 <div class="side-link">
                   <i class="nav-icon fas fa-utensils fa-fw"></i> 
                   <span class="side-link-text">Dining</span>
@@ -72,47 +71,35 @@
                   <span class="side-link-text">Contact Us</span>
                 </div>
             </a>
+            <button type="button" id="dark-mode-button">Dark Mode</button>
         </div>
     </aside>
     <header>
         <div class="heading">
-            <h1>Dining</h1>
+            <h1>Events</h1>
         </div>
     </header>
     <main>
       <div class="content">
         <nav id="local-navigation" class="local-navigation">
                 <ul>
-                    <li class="active local-nav-item" id="oceans-bite-restaurant-link"><a href="#oceans-bite-restaurant">Ocean's Bite Restaurant</a></li>
-                    <li class="local-nav-item" id="grandmas-house-eatery-link"><a href="#grandmas-house-eatery">Grandma's House Eatery</a></li>
+                    <li class="active local-nav-item" id="upcoming-events-link"><a href="#upcoming-events">Upcoming Events</a></li>
+                    <li class="local-nav-item" id="calendar-link"><a href="#calendar">Events Calendar</a></li>
+                    <li class="local-nav-item" id="later-link"><a href="#later"><:)</a></li>
                 </ul>
         </nav>
-  		  <section class="slideshow">
-  		      <div class=center>
-  		          <span id=prev>&lt;&lt;Prev </span>
-  		          <span id=next> Next&gt;&gt;</span>
-  		      </div>
-  		  		<article class="cycle-slideshow" data-cycle-fx=scrollHorz
-  		          data-cycle-timeout=0
-  		          data-cycle-prev="#prev"
-  		          data-cycle-next="#next">
-    		  		<img src="images/underwater-1.jpg" alt="...">
-    		  		<img src="images/underwater-2.jpg" alt="...">
-    		  		<img src="images/underwater-3.jpg" alt="...">
-    		  	</article>
-  		  </section>
         
-        <section id="oceans-bite-restaurant" class="section">
-          <h2>Ocean's Bite Restaurant</h2>
-          <p>Open 24/7.</p>
-          <p>Our world famous restaurant, situated next to the lobby, features in-season fresh seafood and other delicacies. Come in and treat yourself!</p>
-          <a href="files/menu.pdf" target="_blank" id="menu">See our Menu here</a>
+        <section id="upcoming-events" class="section">
+          <h2>Upcoming Events</h2>
+          <p>Here at <i>The Blue Crystal</i>, we are dedicated to providing entertainment and bringing a new experience everyday. We host many events at the Blue Crystal for our guests' enjoyment - here's a snapshot of some of our events!</p>
+          
+          <p style="color: red"> TODO: ADD NEW EVENTS</p>
         </section>
         
-        <section id="grandmas-house-eatery" class="section">
-          <h2>Grandma's House Eatery</h2>
-          <p>Open from 9am to 10pm.</p>
-          <p>It's beautiful down here, but it's easy to miss home and homecooked meals. <i>Grandma's House Eatery</i> doesn't have a menu, instead we welcome our guests to order whatever they desire and our chefs will cater to your request! A unique experience that allows you to eat your comfort food, in Atlantis! </p>
+        <section id="calendar" class="section">
+          <h2>Events Calendar</h2>
+          <p style="color: red"> TODO: ADD EVENTS CALENDAR</p>
+          
         </section>
 
 </div> <!-- End content tag, remove padding for main's content-->

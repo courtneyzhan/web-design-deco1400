@@ -82,12 +82,15 @@ $(document).ready( function() {
     
   });
   
-  
   $("form#booking-form").submit(function() {
     event.preventDefault();
     $(this).hide();
     $("div.notice").show();
   });
+  
+  $("#dark-mode-button").click(function() {
+    $("body").css("background", "black");
+  })
   
   // Hamburger icon on mobile size
   showHamburger();
@@ -98,19 +101,19 @@ $(document).ready( function() {
 	
 	// faq icon drop down
   $('.faq-icon').click(function() {
-    console.log("Hello!!")
     $(this).parent().parent().parent().find('p').toggle(400, "swing", null);
     // $(this).css("color", "red");
-    $(this).toggleClass("down")
+    $(this).toggleClass("down");
     // $(this).toggleClass("fa-rotate-90");
   });
   
-  $('.faq-header').click(function() {
-    console.log("Hello!!")
-    $(this).parent().find('p').toggle(400, "swing", null);
-    // $(this).css("color", "red");
-    $(this).toggleClass("down")
-    // $(this).toggleClass("fa-rotate-90");
+  $('.faq-header-link').click(function() {
+    $(this).parent().find(".faq-icon").click();
+  });
+  
+  $("#faq-expand-all").click(function() {
+    event.preventDefault();
+    $(".faq-icon").click();
   });
   
   // submit Contact Us inquiry form

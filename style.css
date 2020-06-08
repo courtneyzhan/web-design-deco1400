@@ -17,7 +17,7 @@ aside .sidebar {
 }
 
 .sidebar {
-	display: block;
+	display: inliine-block;
   display: flex;
   flex-direction: column;
   background: #3E5666; /*old colour: #98c1d9*/
@@ -472,32 +472,6 @@ div#finish-quiz, form#details, form#questions-hard, form#questions-easy {
   display: none;
 }
 
-/*#inquiry-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.inquiry-form-inputs {
-  padding-left: 0;
-}
-
-.inquiry-form-inputs li {
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.inquiry-form-inputs > li > label {
-  flex: 1 0 120px;
-  max-width: 220px;
-  padding: 8px;
-}
-
-.inquiry-form-inputs > li > input {
-    flex: 1 0 220px;
-    height: 1.5em;
-}*/
-
 #room-booking {
   width: 100%;
   border-radius: 10px;
@@ -548,4 +522,34 @@ form#booking-form ul > li > input {
 
 #room-booking div.notice {
   display: none;
+}
+
+#dark-mode-button {
+  position: fixed;
+  bottom: 0px;
+  width: inherit;
+  border: 0px;
+  height: 3em;
+  background: #3E5666;
+  border-top: solid 2px white;
+  color: white;
+  font-size: 1.5em;
+}
+
+.faq-header-link {
+  border: 0px;
+  background: none;
+  font-family: 'Bree Serif', serif;
+  font-size: 1em;
+}
+
+button#faq-expand-all {
+  background: #4BA9E9;
+  border: 0px;
+  box-shadow: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  float: right;
 }
