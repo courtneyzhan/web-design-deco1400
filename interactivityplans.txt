@@ -14,4 +14,5 @@ My interactive elements:
       2: Manipulation of presentation in response to the user (or other events)
   * Scavenger Hunt Check off List
       1. Creation or manipuation of content in response to user (Changes quiz type based on difficulty and the items displayed when working in a team. )
-  * XX
+  * FAQ Expand All, and individual expands
+      2. Response to user's click, presentation of page changes. 
