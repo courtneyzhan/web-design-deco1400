@@ -104,14 +104,48 @@
                 <label for="difficulty">What difficulty level would you like?</label>
                 <br>
                 <label for="easy">Easy</label>
-                <input type="radio" id="easy" name="difficulty" value="easy">
+                <input type="radio" id="easy" name="difficulty" value="easy" checked="checked">
                 <label for="hard">Hard</label>
                 <input type="radio" id="hard" name="difficulty" value="hard">
                 <br>
                 <label for="teams">Are you working in a team?</label>
-                <input type="text" id="teams" name="teams">
+                <input type="checkbox" id="teams" name="teams" value="teams">
                 <br>
-                <button type="submit">Submit</button>
+                <label for="teamid1" id="teamid">Enter your team member's IDs (max 3):</label>
+                <br>
+                <input type="text" id="teamid1" name="teamid1"><br>
+                <input type="text" id="teamid2" name="teamid2"><br>
+                <input type="text" id="teamid3" name="teamid3"><br>
+                <button type="submit">Let's Start the Hunt!</button>
+              </form>
+              
+              <form id="questions-hard">
+                Hard mode
+              </form>
+              <form id="questions-easy">
+                  <p id="question1">In the busiest area of the city there is a statue of Atlantis' first king holding a trident.</p>
+                  <label for="response1">On which hand is he holding the trident?</label>
+                  <br>
+                  <label for="left">Left</label>
+                  <input type="radio" id="left" name="response1" value="left">
+                  <label for="right">Right</label>
+                  <input type="radio" id="right" name="response1" value="right">
+                  <span class="feedback1"></span>
+                  <br><hr>
+                  <p id="question2">Go west from the heart of Atlantis until you reach the grotto entrance.</p>
+                  <label for="response2">What shape is the marking on the ground?</label>
+                  <br>
+                  <label for="shell">Shell</label>
+                  <input type="radio" id="shell" name="response2" value="shell">
+                  <label for="shield">Shield</label>
+                  <input type="radio" id="shield" name="response2" value="shield">
+                  <label for="fish">Fish</label>
+                  <input type="radio" id="fish" name="response2" value="fish">
+                  <span class="feedback2"></span>
+                  
+                  
+                  <br>
+                  <button type="submit">Submit your Answer</button>
               </form>
             </div>
         </section>

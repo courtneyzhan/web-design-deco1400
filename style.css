@@ -419,6 +419,10 @@ a#menu:hover {
   border: solid 2px black;
 }
 
-form#details {
+form#details, form#questions-hard, form#questions-easy {
+  display: none;
+}
+
+#teamid, #teamid1, #teamid2, #teamid3 {
   display: none;
 }
