@@ -5,3 +5,5 @@
 
 * Home Page - write fluff text
 * Home Page - write 
+
+* Activities - hard mode

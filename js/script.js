@@ -6,6 +6,10 @@ $(document).ready( function() {
   var userName = "";
   var bannerMessage = "";
   var newBannerMessage;
+  var darkMode = false;
+  
+
+  
   $("form#activity-form").submit(function() {
     event.preventDefault();
     userName = $("input[name=username]").val();
@@ -89,7 +93,8 @@ $(document).ready( function() {
   });
   
   $("#dark-mode-button").click(function() {
-    $("body").css("background", "black");
+    $("body").toggleClass("dark-mode");
+    $("footer").css("color", "black");
   })
   
   // Hamburger icon on mobile size

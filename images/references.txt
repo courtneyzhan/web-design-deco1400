@@ -35,3 +35,31 @@ boy.jpg
 
 girl.jpg
   https://pixabay.com/photos/beautiful-smile-girl-woman-happy-1274361/
+  
+room-1.jpg
+  https://unsplash.com/photos/FqqiAvJejto
+  
+room-2.jpg
+  https://unsplash.com/photos/vhztm9QC0L0
+
+room-3.jpg
+  https://unsplash.com/photos/FJLoqqIsSHc
+
+oceans-bite-1.jpg
+  https://unsplash.com/photos/DacVOloJqso
+
+oceans-bite-2.jpg
+  https://unsplash.com/photos/PkbyxvkGWcU
+
+grandmas-1.jpg
+  https://unsplash.com/photos/6hxK5l-sHys
+
+
+amenities-1.jpg
+  https://pixabay.com/photos/computer-lab-education-technology-2381149/
+
+amenities-2.jpg
+  https://unsplash.com/photos/GFrBMipOd_E
+
+underwater-4.jpg
+  https://unsplash.com/photos/SoBJdS5B_BE

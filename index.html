@@ -10,6 +10,7 @@
     <title>My Resort</title>
 </head>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
 <script src="js/scrollspy.js"></script>
 <script src="js/script.js"></script>
 <body>
@@ -98,7 +99,20 @@
         
         <section id="photo-gallery">
           <h2>Photo Gallery</h2>
-          TODO carousel?? pop up modal?
+  		  <section class="slideshow">
+  		      <div class=center>
+  		          <span id=prev>&lt;&lt;Prev </span>
+  		          <span id=next> Next&gt;&gt;</span>
+  		      </div>
+  		  		<article class="cycle-slideshow" data-cycle-fx=scrollHorz
+  		          data-cycle-timeout=0
+  		          data-cycle-prev="#prev"
+  		          data-cycle-next="#next">
+    		  		<img src="images/underwater-4.jpg" alt="man and woman underwater">
+    		  		<img src="images/underwater-2.jpg" alt="ocean">
+    		  		<img src="images/underwater-3.jpg" alt="fish in an archway">
+    		  	</article>
+  		  </section>
         </section>
         
         <br><hr>

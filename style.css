@@ -213,6 +213,9 @@ h2 {
 .slideshow img {
 	width: calc(100% + 6.5em);
 	margin-left: -4em;
+  object-position: center;
+  object-fit: contain;
+  width: 50%;
 }
 
 .faq:not(:first-child) {
@@ -434,7 +437,7 @@ a#menu:hover {
 }
 
 #activities form#activity-form{
-  text-align: right;
+/*  text-align: right;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -551,4 +554,20 @@ button#faq-expand-all {
   border-radius: 10px;
   font-size: 1.2em;
   float: right;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: #23252D;
+    color: white;
+  }
+  
+  footer {
+    color: black;
+  }
+}
+
+.dark-mode {
+  background: #23252D;
+  color: white;
 }
