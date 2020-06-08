@@ -10,7 +10,8 @@ My interactive elements:
   * Scrollspy Local Navigation
       4: Integrates thesmart's scrollspy plugin (see references.txt)
       3: Purpoise is dynamic local navigation in response to user's position on the current page
-  * Dark Mode
+  * Dark Mode??
       2: Manipulation of presentation in response to the user (or other events)
-  * XX
+  * Scavenger Hunt Check off List
+      1. Creation or manipuation of content in response to user (Changes quiz type based on difficulty and the items displayed when working in a team. )
   * XX

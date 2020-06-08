@@ -144,11 +144,11 @@ function questionAnswers(questionNumber, difficulty) {
       console.log(radios[i].value);
       if ((radios[i].value) == answers[questionNumber - 1]) {
         $("form#questions-easy span.feedback" + questionNumber).html("Correct!");
-        $("form#questions-easy span.feedback" + questionNumber).css("color", "green");
+        $("form#questions-easy span.feedback" + questionNumber).css("color", "springgreen");
         return true;
       } else {
         $("form#questions-easy span.feedback" + questionNumber).html("Incorrect, try again!");
-        $("form#questions-easy span.feedback" + questionNumber).css("color", "red");
+        $("form#questions-easy span.feedback" + questionNumber).css("color", "orangered");
         return false;
       }
       break;
