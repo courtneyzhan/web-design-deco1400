@@ -94,8 +94,10 @@
           <!-- <insert js here> -->
             <div id="activities">
               <form id="activity-form">
-                <label for="username">Enter your username:</label>
-                <input type="text" id="username" name="username">
+                <ul>
+                <li><label for="username">Enter your username:</label>
+                <input type="text" id="username" name="username" required></li>
+              </ul>
                 <br>
                 <button type="submit">Submit</button>
               </form>
@@ -103,10 +105,12 @@
               <form id="details">
                 <label for="difficulty">What difficulty level would you like?</label>
                 <br>
-                <label for="easy">Easy</label>
                 <input type="radio" id="easy" name="difficulty" value="easy" checked="checked">
-                <label for="hard">Hard</label>
+                <label for="easy">Easy</label>
+                <br>
                 <input type="radio" id="hard" name="difficulty" value="hard">
+                <label for="hard">Hard</label>
+                
                 <br>
                 <label for="teams">Are you working in a team?</label>
                 <input type="checkbox" id="teams" name="teams" value="teams">
@@ -126,27 +130,52 @@
                   <p id="question1">In the busiest area of the city there is a statue of Atlantis' first king holding a trident.</p>
                   <label for="response1">On which hand is he holding the trident?</label>
                   <br>
-                  <label for="left">Left</label>
                   <input type="radio" id="left" name="response1" value="left">
-                  <label for="right">Right</label>
+                  <label for="left">Left</label>
+                  <br>
                   <input type="radio" id="right" name="response1" value="right">
+                  <label for="right">Right</label>
+                  <br>
                   <span class="feedback1"></span>
+                  
                   <br><hr>
                   <p id="question2">Go west from the heart of Atlantis until you reach the grotto entrance.</p>
                   <label for="response2">What shape is the marking on the ground?</label>
                   <br>
-                  <label for="shell">Shell</label>
                   <input type="radio" id="shell" name="response2" value="shell">
-                  <label for="shield">Shield</label>
+                  <label for="shell">Shell</label>
+                  <br>
                   <input type="radio" id="shield" name="response2" value="shield">
-                  <label for="fish">Fish</label>
+                  <label for="shield">Shield</label>
+                  <br>
                   <input type="radio" id="fish" name="response2" value="fish">
+                  <label for="fish">Fish</label>
+                  <br>
                   <span class="feedback2"></span>
                   
-                  
+                  <br><hr>
+                  <p id="question3">Be quiet! These shy marine animals live in the sand underneath the rock formation that looks like a face.</p>
+                  <label for="response3">Which animal lives here?</label>
+                  <br>
+                  <input type="radio" id="crab" name="response3" value="crab">
+                  <label for="crab">Mud Crabs</label>
+                  <br>
+                  <input type="radio" id="eel" name="response3" value="eel">
+                  <label for="eel">Sand Eels</label>
+                  <br>
+                  <input type="radio" id="turtle" name="response3" value="turtle">
+                  <label for="turtle">Leatherhead Turtles</label>
+                  <br>
+                  <span class="feedback3"></span>
                   <br>
                   <button type="submit">Submit your Answer</button>
               </form>
+              <div id="finish-quiz">
+                <h4>Congratulations, <span id="name"></span>! You've completed today's quiz!</h4>
+                  <p>Screenshot this page and show any of our staff at reception to receive your prize. We hope you enjoyed today's scavenger hunt and were able to explore the beautiful city of Atlantis.</p>
+                  
+                  <p id="team-notice">As you worked in a team, all of your team members are eligible for the prize as well!</p>
+              </div>
             </div>
         </section>
         

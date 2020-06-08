@@ -1,16 +1,23 @@
 $(document).ready( function() {
   
   var difficulty = "";
-  
+  var teams = false;
+  var id = generateID();
+  var userName = "";
+  var bannerMessage = "";
+  var newBannerMessage;
   $("form#activity-form").submit(function() {
     event.preventDefault();
-    var userName = $("input[name=username]").val();
+    userName = $("input[name=username]").val();
     console.log(userName);
     // $(this).toggle();
     $("form#details").show();
     
-    $(this).html("Welcome, " + userName + "! Your ID is " + generateID());
-    $(this).css("text-align", "right")
+    bannerMessage = "Welcome, " + userName + "! Your ID is " + id + "."
+    $(this).html(bannerMessage);
+    $(this).css("text-align", "right");
+    $(this).css("padding-bottom", "0px");
+    
   });
   
   $("form#details").submit(function() {
@@ -28,18 +35,50 @@ $(document).ready( function() {
     
     $(this).toggle();
     $("form#questions-" + difficulty).show();
+    if (teams) {
+      var member1 = $("#teamid1").val();
+      var member2 = $("#teamid2").val();
+      var member3 = $("#teamid3").val();
+      if (member1 != "" || member2 != "" || member3 != "" ) {
+        newBannerMessage += " Team members are: ";
+      }
+      if (member1 != "") {
+        newBannerMessage += member1;
+      }
+      if (member2 != "") {
+        newBannerMessage += ", " + member2;
+      }
+      if (member2 != "") {
+        newBannerMessage += ", " + member3;
+      }
+    }
+    $("form#activity-form").html(newBannerMessage);
   });
   
   $("#teams").click(function() {
     $("#teamid, #teamid1, #teamid2, #teamid3").toggle();
-  })
+    teams = !teams;
+    newBannerMessage = bannerMessage;
+  });
   
   $("form#questions-hard, form#questions-easy").submit(function() {
+    var responded = true;
     event.preventDefault();
       // answer is true
     var questionNumber = 1;
-    questionAnswers(1);
-    questionAnswers(2);
+    responded &= questionAnswers(1, difficulty);
+    responded &= questionAnswers(2, difficulty);
+    responded &= questionAnswers(3, difficulty);
+    if (responded) {
+      console.log("Complete");
+      // $(this).hide();
+      $("div#finish-quiz").show();
+      $("button").attr("disabled", true);
+      $("span#name").html(userName)
+      if (teams == true) {
+        $("#team-notice").show();
+      }
+    }
     
   });
   
@@ -91,8 +130,13 @@ $(document).ready( function() {
   
 });
 
-function questionAnswers(questionNumber) {
-  var answers = ["left", "fish"]
+function questionAnswers(questionNumber, difficulty) {
+  var answers = [];
+  if (difficulty == "easy") {
+    answers = ["left", "fish", "eel"];
+  } else {
+    answers = ["hard"];
+  }
   var radios = document.getElementsByName("response" + questionNumber);
 
   for (var i = 0, length = radios.length; i < length; i++) {
@@ -105,7 +149,7 @@ function questionAnswers(questionNumber) {
       } else {
         $("form#questions-easy span.feedback" + questionNumber).html("Incorrect, try again!");
         $("form#questions-easy span.feedback" + questionNumber).css("color", "red");
-        return true;
+        return false;
       }
       break;
     }
