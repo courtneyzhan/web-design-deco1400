@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-
+    <link rel="stylesheet" type="text/css" href="simple-calendar.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5732694841.js" crossorigin="anonymous"></script>
-    <title>My Resort</title>
+    
+    <title>The Blue Crystal Resort | Events</title>
 </head>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simple-calendar.js"></script>
 <script src="js/scrollspy.js"></script>
 <script src="js/script.js"></script>
 <body>
@@ -71,7 +73,7 @@
                   <span class="side-link-text">Contact Us</span>
                 </div>
             </a>
-            <button type="button" id="dark-mode-button">Dark Mode</button>
+            <!-- <button type="button" id="dark-mode-button">Dark Mode</button> -->
         </div>
     </aside>
     <header>
@@ -92,12 +94,41 @@
           <h2>Upcoming Events</h2>
           <p>Here at <i>The Blue Crystal</i>, we are dedicated to providing entertainment and bringing a new experience everyday. We host many events at the Blue Crystal for our guests' enjoyment - here's a snapshot of some of our events!</p>
           
-          <p style="color: red"> TODO: ADD NEW EVENTS</p>
+          <div class="event">
+            <div class="date">
+              <span class="day">19</span>
+              <span class="month">Jun</span>
+            </div>
+            <div class="event-details">
+              <span class="event-name">Live Music</span>
+              <span class="description">
+                <span class="price">Free •</span>
+                <span class="time">7pm •</span>
+                <span class="other">Ruby Fields</span>
+                <p>We are honoured to announce that we will be hosting the singer <i>Ruby Fields</i>, join us for a fun evening! </p>
+              </span>
+            </div>
+          </div>
+          <br>
+          <div class="event">
+            <div class="date">
+              <span class="day">28</span>
+              <span class="month">Jun</span>
+            </div>
+            <div class="event-details">
+              <span class="event-name">Sip and Paint</span>
+              <span class="description">
+                <span class="price">$5.00 •</span>
+                <span class="time">2pm</span>
+                <p>Our staff will be holding a Sip and Paint event in the lobby, relax, unwind and let your creativity flow!</p>
+              </span>
+            </div>
+          </div>
         </section>
         
         <section id="calendar" class="section">
           <h2>Events Calendar</h2>
-          <p style="color: red"> TODO: ADD EVENTS CALENDAR</p>
+          <div id="container"></div>
           
         </section>
 

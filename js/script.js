@@ -8,6 +8,7 @@ $(document).ready( function() {
   var newBannerMessage;
   var darkMode = false;
   
+  $("#container").simpleCalendar();
 
   
   $("form#activity-form").submit(function() {

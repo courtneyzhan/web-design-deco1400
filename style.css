@@ -150,7 +150,7 @@ h2 {
 .event {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   justify-content: stretch;
   border: solid 2px black;
   font-size: 0.7em;
@@ -177,6 +177,7 @@ h2 {
   font-size: 6em;
   text-align: center;
   padding: 5%;
+/*  padding-bottom: 20%;*/
 }
 
 .event .month {
@@ -197,7 +198,7 @@ h2 {
 
 .event .event-name {
   font-size: 2em;
-  font-family: serif;
+  font-family: 'Bree serif', serif;
   padding-bottom: 0.3em;
 }
 
@@ -208,14 +209,14 @@ h2 {
 .slideshow {
 	overflow: hidden;
 	height: 200px;
+  width:;
 }
 
 .slideshow img {
 	width: calc(100% + 6.5em);
 	margin-left: -4em;
   object-position: center;
-  object-fit: contain;
-  width: 50%;
+  object-fit: fill;
 }
 
 .faq:not(:first-child) {
@@ -571,3 +572,22 @@ button#faq-expand-all {
   background: #23252D;
   color: white;
 }
+
+#more-events {
+  background: #4BA9E9;
+  color: white;
+  width: 80%%;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#more-events a, #more-events a:visited, #more-events a:active, #more-events a:link {
+  color: white;
+  text-decoration: none;
+}  
+
+#more-events:hover {
+  background: black;
+}  
