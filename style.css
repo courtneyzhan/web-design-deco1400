@@ -96,21 +96,18 @@ main {
 }
 
 #upcoming-events-snapshot {
-  height: 700px;
 }
 
 .testimonial {
-  padding-top: 2em;
   display: flex;
   align-items: center;
+  padding-bottom: 2em;
+  
 }
-
-
 
 .testimonial img {
   width: 30%;
   max-width: 200px;
-  
   border-radius: 50%;
 }
 

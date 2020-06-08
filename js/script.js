@@ -135,9 +135,21 @@ $(document).ready( function() {
     $('.local-navigation #' + $(this).attr('id') + "-link").removeClass("active");
 	});
   $.scrollSpy($('.section'))
-  
-  
 });
+
+$(document).scroll(function() {
+  checkOffset();
+});
+
+function checkOffset() {
+  if ($(".local-navigation").offset().top + $(".local-navigation").height() >= $("footer").offset().top) {
+    $(".local-navigation").css("position", "absolute");
+  }
+  if ($(document).scrollTop() + window.innerHeight < $("footer").offset().top) {
+    $(".local-navigation").css("position", "fixed");
+    
+  }
+}
 
 function questionAnswers(questionNumber, difficulty) {
   var answers = [];
