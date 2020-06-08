@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5732694841.js" crossorigin="anonymous"></script>
+    <title>My Resort</title>
+</head>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+<script src="js/scrollspy.js"></script>
+<script src="js/script.js"></script>
+<body>
+	<div class="hamburger"><i class="fas fa-bars"></i></div>
+	<div class="overlay"></div>
+    <aside>
+        <div class="sidebar">
+            <a href="index.html">
+                <div class="side-link">
+                    <!-- <img class="logo" src="images/kirby.png" alt="logo"> -->
+                    <i id = "logo" class="logo fas fa-gem"></i>
+                </div>
+            </a>
+            <a href="#" class="active">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-bed fa-fw"></i> 
+                  <span class="side-link-text">Rooms</span>
+                </div>
+            </a>
+            <a href="activities.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-landmark fa-fw"></i> 
+                  <span class="side-link-text">Activities</span>
+                </div>
+            </a>
+            <a href="missing.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-calendar-day fa-fw"></i> 
+                  <span class="side-link-text">Events</span>
+                </div>
+            </a>
+            <a href="missing.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-map-marked-alt fa-fw"></i> 
+                  <span class="side-link-text">Location</span>
+                </div>
+            </a>
+            <a href="dining.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-utensils fa-fw"></i> 
+                  <span class="side-link-text">Dining</span>
+                </div>
+            </a>
+            <a href="amenities.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-wifi fa-fw"></i> 
+                  <span class="side-link-text">Amenities</span>
+                </div>
+            </a>
+            <a href="faq.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-question-circle fa-fw"></i> 
+                  <span class="side-link-text">FAQs</span>
+                </div>
+            </a>
+            <a href="contact-us.html">
+                <div class="side-link">
+                  <i class="nav-icon fas fa-phone-alt fa-fw"></i> 
+                  <span class="side-link-text">Contact Us</span>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <header>
+        <div class="heading">
+            <h1>Rooms</h1>
+        </div>
+    </header>
+    <main>
+      <div class="content">
+        <nav id="local-navigation" class="local-navigation">
+                <ul>
+                    <li class="active local-nav-item" id="room-bookings-link"><a href="#room-bookings">Room Booking</a></li>
+                </ul>
+        </nav>
+  		  <section class="slideshow">
+  		      <div class=center>
+  		          <span id=prev>&lt;&lt;Prev </span>
+  		          <span id=next> Next&gt;&gt;</span>
+  		      </div>
+  		  		<article class="cycle-slideshow" data-cycle-fx=scrollHorz
+  		          data-cycle-timeout=0
+  		          data-cycle-prev="#prev"
+  		          data-cycle-next="#next">
+    		  		<img src="images/underwater-1.jpg" alt="...">
+    		  		<img src="images/underwater-2.jpg" alt="...">
+    		  		<img src="images/underwater-3.jpg" alt="...">
+    		  	</article>
+  		  </section>
+        
+        <section id="room-bookings" class="section">
+          <h2>Room Bookings</h2>
+          <p>Our rooms offer a view of Atlantis and the beautiful marine life surrounding our resort. Our resort staff and facilities aim to cater to your every need, enter your holiday's details below and see what rooms are available for you!</p>
+            <div id="room-booking">
+              <form id="booking-form">
+                <ul class="booking-form-inputs">
+                  <li>
+                    <label for="arrival">Date of Arrival</label>
+                    <input type="date" id="arrival" name="arrival" required>
+                  </li>
+                  <li>
+                    <label for="departure">Date of Departure</label>
+                    <input type="date" id="departure" name="departure" required>
+                  </li>
+                  <li>
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" required>
+                  </li>
+                </ul>
+                <br>
+                <button type="submit">Submit</button>
+              </form>
+              <div class="notice">
+                <p>Thanks for your interest!</p>
+                <p>Unfortunately, due to the novel coronavirus, our resort is not operating at this time. To be alerted when <i>The Blue Crystal</i> is ready to welcome customers to a holiday of a lifetime, leave your contact details through submitting an inquiry <a href='contact-us.html'>here</a>.</p>
+              </div>
+            </div>
+            <br>
+            <article>
+              See what amenities our resort has to offer <a href="amenities.html">here</a>.
+            </article>
+        </section>
+</div> <!-- End content tag, remove padding for main's content-->
+
+    </main>
+        <footer>
+            <div class="footer-content">
+                <hr/> &copy; Copyright!
+            </div>
+        </footer>
+</body>
+</html>
