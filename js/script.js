@@ -1,5 +1,4 @@
-$(document).ready( function() {
-  
+$(document).ready(function() {
   var difficulty = "";
   var teams = false;
   var id = generateID();
@@ -28,7 +27,6 @@ $(document).ready( function() {
   $("form#details").submit(function() {
     event.preventDefault();
     var radios = document.getElementsByName('difficulty');
-
     for (var i = 0, length = radios.length; i < length; i++) {
       if (radios[i].checked) {
         // do whatever you want with the checked radio

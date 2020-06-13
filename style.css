@@ -17,7 +17,6 @@ aside .sidebar {
 }
 
 .sidebar {
-	display: inliine-block;
   display: flex;
   flex-direction: column;
   background: #3E5666; /*old colour: #98c1d9*/
@@ -167,7 +166,7 @@ h2 {
   
   display: flex;
   flex-direction: column;
-  align-items: center stretch;
+  align-items: stretch;
   align-content: center;
   padding-top: 2%;
   background: #D6D6D6; /*  color: white;*/
@@ -209,7 +208,6 @@ h2 {
 .slideshow {
 	overflow: hidden;
 	height: 200px;
-  width:;
 }
 
 .slideshow img {
@@ -551,7 +549,7 @@ button#faq-expand-all {
   border: 0px;
   box-shadow: none;
   color: white;
-  padding: 0.5em 1em;
+  padding: 0em 1em;
   border-radius: 10px;
   font-size: 1.2em;
   float: right;
@@ -576,7 +574,6 @@ button#faq-expand-all {
 #more-events {
   background: #4BA9E9;
   color: white;
-  width: 80%%;
   margin-top: 2em;
   padding: 1em;
   text-align: center;
