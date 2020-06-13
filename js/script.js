@@ -7,6 +7,8 @@ $(document).ready(function() {
   var newBannerMessage;
   var darkMode = false;
   
+  $(".answer").hide();
+  
   $("#container").simpleCalendar();
 
   
@@ -101,6 +103,10 @@ $(document).ready(function() {
 	window.onresize = function(event) {
 		showHamburger();
 	};
+  $(".hamburger").on("keydown", function(e) { 
+      if(e.keyCode == 13)
+          $(".hamburger").click() 
+  });
 
 	
 	// faq icon drop down
@@ -117,6 +123,7 @@ $(document).ready(function() {
   
   $("#faq-expand-all").click(function() {
     event.preventDefault();
+    $(".answer").hide();
     $(".faq-icon").click();
   });
   

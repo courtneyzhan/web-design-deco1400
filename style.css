@@ -7,6 +7,9 @@ body {
 
 /* SIDE BAR CONTENT*/
 aside .sidebar {
+  animation-name: sidebar-animation;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
   width: 20em;
   position: fixed;
   overflow: scroll;
@@ -14,6 +17,7 @@ aside .sidebar {
   overflow-x: hidden;
   top: 0%;
   height: 100%;
+  z-index: 999;
 }
 
 .sidebar {
@@ -226,9 +230,9 @@ h2 {
   color: #4BA9E9;
 } 
 
-.answer {
+/*.answer {
   display: none;
-}
+}*/
 
 .rotate {
     -moz-transition: all 0.3s linear;
@@ -319,14 +323,10 @@ footer {
 }
 
 .hamburger {
-/*	width: 200px;
-	height: 200px;*/
 	color: #4BA9E9;
 	font-size: 4em;
-/*	position: absolute;*/
 	display: none;
 	padding-left: 1em;
-	
 }
 
 .overlay {
@@ -336,7 +336,7 @@ footer {
 	position: fixed;
 	top: 0;
 	display: none;
-/*	z-index: -1;*/
+  z-index: 800;
 }
 
   /* MOBILE (< 1000px width) */
@@ -588,3 +588,8 @@ button#faq-expand-all {
 #more-events:hover {
   background: black;
 }  
+
+@keyframes sidebar-animation {
+  from {left: -200px;}
+    to {left: 0px;}
+}
